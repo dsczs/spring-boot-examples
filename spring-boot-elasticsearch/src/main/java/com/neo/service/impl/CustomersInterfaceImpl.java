@@ -19,11 +19,11 @@ import java.util.List;
 
 public class CustomersInterfaceImpl implements CustomersInterface {
 
-    Logger logger= LoggerFactory.getLogger(this.getClass());
+    Logger logger = LoggerFactory.getLogger(this.getClass());
     @Autowired
     private CustomerRepository customerRepository;
 
-   @Override
+    @Override
     public List<Customer> searchCity(Integer pageNumber, Integer pageSize, String searchContent) {
 /*        // 分页参数
         Pageable pageable = new PageRequest(pageNumber, pageSize);
